@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="date_of_birth">Ngày sinh:</label>
+        <input type="date" id="date_of_birth" required>
+        <br>
+        <label for="gender">Giới tính:</label>
+            <input type="radio" name="gender"> Nam
+            <input type="radio" name="gender"> Nữ
+        <br>
+        <label for="phone_number">Số điện thoại:</label>
+        <input type="tel" id="phone_number" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br>
+        <label for="address">Địa chỉ:</label>
+        <textarea name="address" id="address" cols="20" rows="3" required></textarea>
+        <br>
+        <label for="role">Vai trò:</label>
+        <select name="role" id="role">
+            <option value="student">Thành viên</option>
+            <option value="teacher">Thư kí</option>
+            <option value="staff">Hội trưởng</option>
+        </select>
+        <br>
+        <label for="hobby">Sở thích:</label>
+            <input type="text" name="hobby" required>
+        <br>
+        <label for="skill">Kỹ năng:</label>
+            <input type="text" name="skill" required>
+        <br>
+        <label for="free_time">Thời gian rảnh:</label>
+            <input type="radio" name="free_time"> Sáng
+            <input type="radio" name="free_time"> Chiều
+            <input type="radio" name="free_time"> Tối
+        <br>
+        <label for="reason_to_join">Lý do tham gia:</label>
+        <textarea name="reason_to_join" id="reason_to_join" cols="20" rows="3" required></textarea>
+        <br>
+        <label for="favourite_color">Màu yêu thích:</label>
+        <input type="color" name="favourite_color" placeholder="black" required>
+        <br>
+        <label for="subcrible">Đăng kí nhận bản tin:</label>
+            <input type="radio" name="subcrible"> Có
+        <br>
+        <label for="recieve_email">Nhận thông báo qua email:</label>
+            <input type="radio" name="recieve_email"> Email
+            <input type="radio" name="recieve_email"> SMS
+        <br>
+        <button type="submit">Đăng ký thành viên</button>
+    </form>
+</body>
+</html>
