@@ -16,9 +16,8 @@ h2 {
 }
 
 .divider {
-    height: 1px;
-    background-color: #ddd;
-    margin-bottom: 20px;
+    opacity: 0.6;
+    margin-bottom: 15px;
 }
 
 .article-grid {
