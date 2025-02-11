@@ -13,5 +13,7 @@
 }
 
 .text{
-    color: rgb(34, 186, 34);
+    color: rgb(53, 212, 53);
+    text-decoration: underline dotted blue;
+    text-decoration-color: rgb(53, 212, 53);
 }
