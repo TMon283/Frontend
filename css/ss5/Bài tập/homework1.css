@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+}
+.image{
+    text-align: center;
+}
+.content1{
+    text-align: center;
+    line-height: 40px;
+}
+h1{
+    line-height: 40px;
+}
