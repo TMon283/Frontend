@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.heading{
+    background-color: rgb(47, 47, 249);
+    color: white;
+    height: 120px;
+    width: 1000px;
+    line-height: 60px;
+    text-align: center;
+    padding-top: 1%;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.a{
+    margin: 1%;
+    text-decoration: none;
+    color: white;
+}
+
+.button-setting{
+    line-height: 25px;
+}
+
+img{
+    border-radius: 100%;
+    border: 3px solid blue;
+    vertical-align: middle;
+}
+
+.edit-body{
+    background-color: rgb(245, 243, 240);
+    height: 130px;
+    width: 1000px;
+    padding-top: 2%;
+    text-align: center;
+}
+
+table{
+    text-align: center;
+    margin-left: 20%;
+    
+}
+
+.footer{
+    background-color: rgb(221, 224, 226);
+    height: 50px;
+    width: 1000px;
+    text-align: center;
+    line-height: 50px;
+}

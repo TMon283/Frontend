@@ -1,0 +1,51 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+.header{
+   background-color: rgb(93, 225, 141);
+   color:white;
+   padding: 10px;
+}
+.logo{
+   display: inline-block;
+   width: 85%;
+}
+.menu-links{
+   color:white;
+   text-decoration: none;
+}
+.profile{
+   padding: 10px;
+   background-color:rgb(217, 217, 217);
+}
+.avatar{
+   margin-left: 30px;
+   border-radius: 50%;
+}
+.intro{
+   position: relative;
+   bottom: 100px;
+}
+.project-btn{
+   width: 370px;
+   background-color:rgb(33, 33, 45);
+   color:white;
+   border-radius: 5px;
+   padding: 10px;
+   margin-left: 8px;
+
+}
+.note{
+   background-color:rgb(209, 207, 207);
+   text-align: center;
+   height: 60px;
+   line-height: 32px;
+   padding: 10px;
+}
+.footer{
+   text-decoration: none;
+   color:rgb(4, 4, 4);
+}
