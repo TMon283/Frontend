@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 500px;
+    margin: 10px;
+}
+
+.h1{
+    position: relative;
+    left: 50px;
+    bottom: 42px;
+}
+
+.title{
+    margin-bottom: auto;
+}
+
+.image{
+    position: relative;
+    bottom: 20px;
+}
+
+.text{
+    position: relative;
+    top: 10px;
+    opacity: 0.7;
+    line-height: 22px;
+}
