@@ -5,11 +5,13 @@
 }
 
 .card{
-    height: 400px;
+    height: 270px;
     width: 360px;
-    background-color: azure;
+    background-color: white;
     padding: 30px;
     margin: 10px;
+    border: 1px solid rgb(182, 180, 180);
+    border-radius: 5px;
 }
 
 .title{
@@ -29,6 +31,10 @@
 .client{
     padding-top: 15px;
     padding-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .budget{
@@ -68,11 +74,22 @@
 }
 
 .avt{
+    padding-top: 30px;
+}
 
+img{
+    border-radius: 100%;
+}
+
+.img{
+    position: relative;
+    right: 12px;
 }
 
 .task{
-
+    position: relative;
+    left: 275px;
+    bottom: 24px;
 }
 
 .blurred-text{
