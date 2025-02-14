@@ -54,3 +54,7 @@
     border-left: 2px solid rgb(215, 215, 215);
     border-right: 2px solid rgb(215, 215, 215);
 }
+
+.text_inside{
+    color: violet;
+}
