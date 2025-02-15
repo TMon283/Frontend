@@ -83,9 +83,9 @@ footer {
     background-color: rgb(231, 229, 229);
 }
 
-footer span {
-    text-decoration-line: underline;
+footer a {
     text-decoration-style: dotted;
+    color: #999;
 }
 
 .credit p {
