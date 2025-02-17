@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container .image1{
+    position: relative
+}
+
+.container .image1 .text{
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    padding-left: 20px;
+    line-height: 50px;
+}
+
+.container .image1 img{
+    width: 800px;
+    height: 300px;
+}
+
+.container img{
+    width: 260px;
+    height: 140px;
+}
+
+.container .column1{
+    display: flex;
+}
+
+.container .column1 .image{
+    width: 260px;
+    height: 150px;
+    margin-top: 5px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.container .column1 .image .text{
+    position: absolute;
+    bottom: 40px;
+    color: white;
+    font-size: 90%;
+    padding-left: 20px;
+}
+
+.container .column1 .image .text p{
+    margin-top: 20px;
+}
+
+.container .column2{
+    display: flex;
+}
+
+.container .column2 .image{
+    width: 260px;
+    height: 150px;
+    margin-right: 5px;
+}
+
+.container .column2 .image .text{
+    position: absolute;
+    width: 220px;
+    bottom: 300px;
+    font-size: 90%;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+}
+
+.container .column2 .image .text p{
+    margin-top: 20px;
+}
+
+.container .column2 .sign-up{
+    width: 260px;
+    height: 140px;
+    margin-right: 10px;
+    margin-left: 5px;
+    background-color: rgb(151, 17, 17);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .column2 .sign-up p{
+    font-size: 80%;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.container .column2 .sign-up .btn-sign{
+    border: none;
+    color: rgb(151, 17, 17);
+    border-radius: 5px;
+    width: 240px;
+    height: 30px;
+    margin-left: 10px;
+}
+
