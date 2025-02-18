@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: rgb(246, 244, 244);
+    height: 310px;
+    width: 710px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .header{
+    margin-left: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.container .body{
+    display: flex;
+    margin: 0px 10px 10px 10px;
+}
+
+.football , .basketball, .car, .table-tennis{
+    width: 160px;
+    margin-right: 15px;
+}
+
+.fb-text, .car-text{
+    height: 50px;
+    background-color: rgb(227, 227, 227);
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.bkb-text{
+    height: 109px;
+    background-color: rgb(227, 227, 227);
+    text-align: center;
+    line-height: 109px;
+    margin-top: 13px;
+    border-radius: 5px;
+}
+
+.tt-text{
+    height: 80px;
+    line-height: 30px;
+    padding-top: 10px;
+    background-color: rgb(227, 227, 227);
+    text-align: center;
+    margin-top: 13px;
+    border-radius: 5px;
+}
+
+.container .body h2{
+    background: linear-gradient(to bottom, black, rgb(214, 213, 213)); 
+        -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text;
+}
+
+.container .body img{
+    border-radius: 5px;
+}

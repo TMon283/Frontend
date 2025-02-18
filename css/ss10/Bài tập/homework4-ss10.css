@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 800px;
+    height: 320px;
+    background-color: bisque;
+}
+
+.container .header{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    left: 600px;
+}
+
+.container .header a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+    font-weight: 700;
+    font-size: 90%;
+    margin-left: 10px;
+}
+
+.container .body{
+    background-color: bisque;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.container .body .infor{
+    width: 340px;
+    margin-left: 80px;
+    margin-right: 120px;
+}
+
+.container .body .infor p{
+    font-size: 70%;
+    margin-top: 20px;
+    line-height: 16px;
+}
+
+.container .body .image img{
+    border-radius: 100%;
+    box-shadow: 5px 5px white;
+}
+
+.container .body .infor button{
+    background-color: tomato;
+    color: white;
+    height: 30px;
+    width: 160px;
+    border: none;
+    margin-top: 20px;
+}
