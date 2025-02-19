@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 900px;
+    width: 1000px;
+    border: 3px solid black;
+}
+
+.header{
+    height: 50px;
+    width: 1000px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header .icon-left{
+    width: 30px;
+    height: 30px;
+    background-color: pink;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.header .lines{
+    position: absolute;
+    right: 0;
+    display: flex;
+    padding-right: 100px;
+}
+
+.header .line{
+    width: 80px;
+    height: 2px;
+    background-color: pink;
+    margin-right: 20px;
+}
+
+.header .line4{
+    width: 80px;
+    height: 2px;
+    background-color: pink;
+    margin-right: 20px;
+    display: none;
+}
+
+.header .icon-right{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    display: none;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body .line1{
+    margin: 20px 20px 0px 20px;
+    width: 940px;
+    height: 350px;
+    background-color: rgb(118, 3, 57);
+}
+
+.body .line2{
+    display: flex;
+}
+
+.line2 .box2{
+    width: 220px;
+    height: 140px;
+    margin: 20px 10px 0px 10px;
+    background-color: rgb(198, 9, 94);
+}
+
+.body .line3{
+    display: flex;
+}
+
+.line3 .box3{
+    width: 460px;
+    height: 180px;
+    margin: 20px 10px 0px 10px;
+    background-color: rgb(237, 59, 139);
+}
+
+.line4{
+    margin: 20px 20px 0px 20px;
+    width: 940px;
+    height: 90px;
+    background-color: rgb(250, 138, 190);
+}
+
+@media screen and (max-width: 1200px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        height: 900px;
+        width: 600px;
+        border: 3px solid black;
+    }
+    
+    .header{
+        height: 50px;
+        width: 600px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .header .icon-left{
+        width: 30px;
+        height: 30px;
+        background-color: pink;
+        border-radius: 50%;
+        margin-left: 40px;
+    }
+    .header .lines{
+        position: absolute;
+        right: 0;
+        display: flex;
+        padding-right: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .line{
+        width: 60px;
+        height: 2px;
+        background-color: pink;
+        margin-right: 20px;
+    }
+    .header .line4{
+        position: absolute;
+        width: 60px;
+        height: 2.5px;
+        background-color: pink;
+        right: 260px;
+        bottom: 0px;
+        display: block;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body .line1{
+        margin: 20px 20px 0px 20px;
+        width: 520px;
+        height: 300px;
+        background-color: rgb(118, 3, 57);
+    }
+    .body .line2{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 30px;
+    }
+    
+    .line2 .box2{
+        width: 250px;
+        height: 140px;
+        margin: 20px 10px 0px 10px;
+        background-color: rgb(198, 9, 94);
+    }
+    .body .line3 .box3{
+        display: none;
+    }
+    .line4{
+        margin: 20px 20px 0px 20px;
+        width: 520px;
+        height: 180px;
+        background-color: rgb(250, 138, 190);
+    }
+}
+
+@media screen and (max-width: 768px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        height: 870px;
+        width: 400px;
+        border: 3px solid black;
+    }
+    
+    .header{
+        height: 50px;
+        width: 400px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .header .icon-left{
+        width: 30px;
+        height: 30px;
+        background-color: pink;
+        border-radius: 50%;
+        margin-left: 40px;
+    }
+    .header .lines{
+        position: absolute;
+        right: 0;
+        display: flex;
+        padding-right: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .line{
+        width: 60px;
+        height: 2px;
+        background-color: pink;
+        margin-right: 20px;
+        display: none;
+    }
+    .header .line4{
+        position: absolute;
+        width: 60px;
+        height: 2.5px;
+        background-color: pink;
+        right: 260px;
+        bottom: 0px;
+        display: none;
+    }
+    .header .icon-right{
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        margin-right: 40px;
+        display: block;
+        opacity: 0.7;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body .line1{
+        margin: 20px 20px 0px 20px;
+        width: 320px;
+        height: 150px;
+        background-color: rgb(118, 3, 57);
+    }
+    .body .line2{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 30px;
+    }
+    
+    .line2 .box2{
+        width: 320px;
+        height: 100px;
+        margin: 20px 10px 0px 10px;
+        background-color: rgb(198, 9, 94);
+    }
+    .body .line3 .box3{
+        display: none;
+    }
+    .line4{
+        margin: 20px 20px 0px 20px;
+        width: 320px;
+        height: 130px;
+        background-color: rgb(250, 138, 190);
+    }
+}
