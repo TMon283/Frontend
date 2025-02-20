@@ -1,0 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.form-select:hover{
+    background-color: blue !important;
+}

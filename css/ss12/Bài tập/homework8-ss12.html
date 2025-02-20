@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Payment</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Credit card</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Debit card</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">PayPal</label>
+            </div>
+        </div>
+        <div class="line1 d-flex">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Name on card</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Full name as displayed on card</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Credit card number</label>
+                <input type="number" class="form-control" id="exampleInputPassword1">
+            </div>
+        </div>
+        <div class="line2 d-flex">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Expiration</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">CVV</label>
+                <input type="number" class="form-control" id="exampleInputPassword1">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Continue to checkout</button>
+    </div>
+</body>
+</html>
