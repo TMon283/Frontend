@@ -1,7 +1,7 @@
 let math = +prompt("Mời bạn nhập điểm môn toán: ");
-let physic = +prompt("Mời bạn nhập điểm môn lí: ");
-let chemistry = +prompt("Mời bạn nhập điểm môn hóa: ");
-let average = (math + physic + chemistry)/3;
+let literature = +prompt("Mời bạn nhập điểm môn văn: ");
+let english = +prompt("Mời bạn nhập điểm môn anh: ");
+let average = (math + literature + english)/3;
 if (average >= 8) {
     console.log("Giỏi");
 } else if (average >= 6.5 && average <= 7.9) {
