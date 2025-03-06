@@ -19,15 +19,25 @@ do{
             break;
         case 4:
             let index = +prompt("Nhập vị trí bạn muốn sửa: ");
-            let editElement = +prompt("Nhập giá trị bạn muốn sửa: ");
-            array.splice(index, 1, editElement);
-            console.log(array);
-            break;
+            if (index < 0 || index >= array.length) {
+                console.log("Vị trí không hợp lệ");
+                break;
+            } else {
+                let editElement = +prompt("Nhập giá trị bạn muốn sửa: ");
+                array.splice(index, 1, editElement);
+                console.log(array);
+                break;
+            }
         case 5:
             let deleleIndex = +prompt("Nhập vị trí bạn muốn xóa: ");
-            array.splice(deleleIndex, 1);
-            console.log(array);
-            break;
+            if (deleleIndex < 0 || deleleIndex >= array.length) {
+                console.log("Vị trí không hợp lệ");
+                break;
+            } else {
+                array.splice(deleleIndex, 1);
+                console.log(array);
+                break;
+            }
         case 6:
             break;
         default:
