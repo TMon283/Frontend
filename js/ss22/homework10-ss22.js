@@ -1,6 +1,6 @@
+var array = [];
 do{
     var choice = +prompt("     MENU\n\n1. Nhập vào mảng\n2. Hiển thị mảng\n3. Thêm phần tử\n4. Sửa phần tử\n5. Xóa phần tử\n6. Thoát\n\n     Lựa chọn của bạn: ");
-    var array = [];
     switch (choice) {
         case 1:
             let number = +prompt("Nhập số lượng phần tử bạn muốn thêm vào mảng: ");
