@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 0;
+            padding: 0;
+            height: 300px;
+            width: 1000px;
+        }
+        .text{
+            display: flex;
+            display: none;
+            padding-left: 30px;
+            align-items: center;
+            margin-left: 200px;
+            height: 100px;
+            width: 500px;   
+            background-color: white;
+            border-radius: 10px;
+        }
+        .heading{
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+        .btn-open{
+            background-color: gray;
+            border-radius: 5px;
+            height: 30px;
+            width: 100px;
+        }
+        .btn-out{
+            background-color: white;
+            border: none;
+            position: relative;
+            left: 315px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Model Example</h1>
+            <button class="btn-open">Open Model</button>
+        </div>
+        <div class="text">
+            <p>Some text in the Model</p>
+            <button class="btn-out"><b>X</b></button>
+        </div>
+    </div>
+    <script>
+        document.getElementsByClassName("btn-out")[0].addEventListener("click",()=>{
+            document.getElementsByClassName("text")[0].style.display="none";
+            document.getElementsByClassName("container")[0].style.background="white";
+        });
+        document.getElementsByClassName("btn-open")[0].addEventListener("click",()=>{
+            document.getElementsByClassName("text")[0].style.display="block".display="flex";
+            document.getElementsByClassName("container")[0].style.background="gray";
+        })
+    </script>
+</body>
+</html>

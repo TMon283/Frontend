@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is a text</h2>
+    <button class = "hide">Hide text</button>
+    <button class = "show">Show text</button>
+    <script>
+        document.getElementsByClassName("hide")[0].addEventListener("click",()=>{
+        document.getElementsByTagName("h2")[0].style.display="none";
+    });
+
+        document.getElementsByClassName("show")[0].addEventListener("click",()=>{
+        document.getElementsByTagName("h2")[0].style.display="block";
+    });
+    </script>
+</body>
+</html>

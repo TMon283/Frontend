@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding: 0;
+            margin: 0;
+            width: 500px;
+            height: 500px;
+            background-color: white;
+        }
+        .colors{
+            display: flex;
+        }
+        .green{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 1px solid black;
+            margin: 5px;
+        }
+        .red{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 1px solid black;
+            margin: 5px;
+        }
+        .purple{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            border: 1px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Change background-color</p>
+        <p>Mouse click</p>
+        <div class="colors">
+            <div class="green">Xanh</div>
+            <div class="red">Đỏ</div>
+            <div class="purple">Tím</div>
+        </div>
+    </div>
+    <script>
+        document.getElementsByClassName("green")[0].addEventListener("click",()=>{
+            document.getElementsByClassName("container")[0].style.background="green";
+        })
+        document.getElementsByClassName("red")[0].addEventListener("click",()=>{
+            document.getElementsByClassName("container")[0].style.background="red";
+        })
+        document.getElementsByClassName("purple")[0].addEventListener("click",()=>{
+            document.getElementsByClassName("container")[0].style.background="purple";
+        })
+    </script>
+</body>
+</html>

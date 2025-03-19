@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .container-reverse{
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Toggle Dark/Light Mode</h1>
+        <p>Click the button to toggle between dark and light mode for this page</p>
+        <button class="btn">Toggle dark mode</button>
+    </div>
+    <script>
+        document.getElementsByClassName("btn")[0].addEventListener("click",()=>{
+            document.getElementsByClassName("container")[0].classList.toggle("container-reverse");
+        })
+    </script>
+</body>
+</html>
