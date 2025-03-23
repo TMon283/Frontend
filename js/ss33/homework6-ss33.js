@@ -1,19 +1,19 @@
 let weatherData = {
-    "Hà Nội": {
+    "hà nội": {
         temperature: 25,
         humidity: 70,
         windSpeed: 5,
         description: "Có mây",
         icon: "☁️"
     },
-    "Hồ Chí Minh": {
+    "hồ chí minh": {
         temperature: 32,
         humidity: 75,
         windSpeed: 7,
         description: "Nắng",
         icon: "☀️"
     },
-    "Đà Nẵng": {
+    "đà nẵng": {
         temperature: 28,
         humidity: 82,
         windSpeed: 12,
@@ -21,6 +21,7 @@ let weatherData = {
         icon: "🌧️"
     }
 };
+
 function searchWeather() {
     let cityInput = document.getElementById("city-input").value.trim().toLowerCase();
     let resultDiv = document.getElementById("weather-result");
@@ -29,7 +30,7 @@ function searchWeather() {
         let weather = weatherData[cityInput];
         document.getElementById("city-name").innerText = cityInput.charAt(0).toUpperCase() + cityInput.slice(1);
         document.getElementById("weather-icon").innerText = weather.icon;
-        document.getElementById("temperature").innerText = `Nhiệt độ: ${weather.temperature}°C`;
+        document.getElementById("temperature").innerText = `${weather.temperature}°C`;
         document.getElementById("description").innerText = `Thời tiết: ${weather.description}`;
         document.getElementById("humidity").innerText = `Độ ẩm: ${weather.humidity}%`;
         document.getElementById("wind-speed").innerText = `Tốc độ gió: ${weather.windSpeed} km/h`;
