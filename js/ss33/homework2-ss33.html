@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="name" id="name"></textarea>
+    <p><span class="count">0</span> ký tự</p>
+    <button class="check">Kiểm tra</button>
+    <script>
+        document.getElementsByClassName("check")[0].addEventListener("click",()=>{
+            let count = document.getElementById("name").value;
+            document.getElementsByClassName("count")[0].innerHTML=count.length;
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="list">
+        <select onchange="selectFilter()" name="" id="dish">
+            <option value="fullList">Lựa chọn danh mục</option>
+            <option value="Đồ ăn">Đồ ăn</option>
+            <option value="Đồ uống">Đồ uống</option>
+            <option value="Dụng cụ">Dụng cụ</option>
+        </select>
+        <button class="filter" onclick="selectFilter()">Lọc</button>
+        <ul id="myUL">
+
+        </ul>
+    </div>
+    <script>
+        let dish = [
+            { name: 'Rau sạch', category: 'Đồ ăn'},
+            { name: 'Thịt lợn', category: 'Đồ ăn'},
+            { name: 'Pepsi không calo', category: 'Đồ uống'},
+            { name: 'Cocacola', category: 'Đồ uống'},
+            { name: 'Cờ lê', category: 'Dụng cụ'},
+            { name: 'Tua vít', category: 'Dụng cụ'},
+        ];
+
+        function render(list) {
+            let str = "";
+            for (let i = 0; i < list.length; i++) {
+                str += `<li><b>Tên sản phẩm:</b> ${list[i].name} - <b>Danh mục:</b> ${list[i].category}</li>`;
+            }
+            document.getElementById("myUL").innerHTML = str;
+        }
+
+        function selectFilter() {
+            document.getElementsByClassName("filter")[0].addEventListener("click",()=>{
+                let check = document.getElementById("dish").value;
+                let result = (check === "fullList") ? dish : dish.filter(item => item.category === check);
+                render(result);
+            })
+        }
+    </script>
+</body>
+</html>
