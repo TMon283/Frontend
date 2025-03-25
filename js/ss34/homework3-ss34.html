@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .login-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-form input {
+            width: 380px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-form button {
+            width: 400px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
+        .forgot-signup {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .forgot-password, .signup {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password {
+            margin-right: 105px;
+        }
+
+        .signup {
+            margin-left: 105px;
+        }
+
+        .forgot-password:hover, .signup:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h2>Login</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="login-email" placeholder="Enter your email address">
+        <label for="password">Password:</label>
+        <input type="password" id="login-password" placeholder="Enter your password">
+        <button onclick="login()">Login</button>
+        <div class="forgot-signup">
+            <a href="#" class="forgot-password">Forgot password?</a>
+            <span> or </span>
+            <a href="register.html" class="signup">SignUp</a>
+        </div>        
+    </div>
+
+    <script>
+        function login() {
+            const email = document.getElementById('login-email').value.trim();
+            const password = document.getElementById('login-password').value;
+
+            if (!email) {
+                alert('Email không được bỏ trống!');
+                return;
+            }
+
+            const user = localStorage.getItem(email);
+            if (!user) {
+                alert('Email không tồn tại!');
+                return;
+            }
+
+            const userData = JSON.parse(user);
+            if (userData.password !== password) {
+                alert('Mật khẩu không đúng!');
+                return;
+            }
+
+            alert('Đăng nhập thành công!');
+            window.location.href = 'homework1-ss34.html';
+        }
+    </script>
+</body>
+</html>

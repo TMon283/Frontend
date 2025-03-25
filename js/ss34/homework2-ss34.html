@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .all {
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        .container {
+            height: 300px;
+            width: 700px;
+            background-color: white;
+            padding-top: 20px;
+            border-radius: 5px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid;
+            margin-left: 20px;
+            margin-right: 5px;
+        }
+
+        .date {
+            height: 32px;
+            border-radius: 5px;
+            border: 1px solid;
+            margin-right: 5px;
+        }
+
+        .choice {
+            height: 35px;
+            border-radius: 5px;
+            border: 1px solid;
+            margin-right: 5px;
+        }
+
+        .name {
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid;
+            margin-right: 5px;
+        }
+
+        .btn {
+            height: 35px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .content1 {
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 630px;
+            height: 150px;
+            border-bottom: 1px solid lightgray;
+        }
+
+        .tablehead {
+            text-align: left;
+            background-color: #F4F4F4;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            height: 35px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: none;
+        }
+
+        .STT {
+            width: 20px;
+            padding-left: 7px;
+        }
+
+        .status {
+            width: 80px;
+            text-align: center;
+        }
+
+        .Ass {
+            width: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="container">
+            <h2 class="title">Task Management</h2>
+            <input class="content" type="text" placeholder="Content">
+            <input class="date" type="date">
+            <select class="choice" name="" id="">
+                <option value="">Choose status</option>
+                <option value="Pending">Pending</option>
+                <option value="Handle">Handle</option>
+            </select>
+            <input class="name" type="text" placeholder="Username">
+            <button class="btn" onclick="addTask()">Submit</button>
+            <table class="content1">
+                <thead class="tablehead">
+                    <tr>
+                        <th class="STT">#</th>
+                        <th>Content</th>
+                        <th>Due date</th>
+                        <th class="status">Status</th>
+                        <th class="Ass">Assigned to</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="bodytable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./homework2-ss34.js"></script>
+</body>
+
+</html>
