@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý danh mục</title>
+    <link rel="stylesheet" href="./homework5,6-ss35.css">
+</head>
+<body>
+
+    <h1>Danh mục</h1>
+    <button id="addCategoryBtn">Thêm mới danh mục</button>
+    
+    <label for="filterStatus">Trạng thái:</label>
+    <select id="filterStatus">
+        <option value="all">Tất cả</option>
+        <option value="active">Đang hoạt động</option>
+        <option value="inactive">Ngừng hoạt động</option>
+    </select>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Mã danh mục</th>
+                <th>Tên danh mục</th>
+                <th>Trạng thái</th>
+                <th>Chức năng</th>
+            </tr>
+        </thead>
+        <tbody id="categoryTableBody">
+            <!-- Danh sách danh mục sẽ hiển thị ở đây -->
+        </tbody>
+    </table>
+
+    <!-- Form thêm mới danh mục -->
+    <div id="categoryFormModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Thêm mới danh mục</h2>
+            <label for="categoryId">Mã danh mục</label>
+            <input type="text" id="categoryId">
+            <span class="error" id="categoryIdError">Mã danh mục không được để trống</span>
+
+            <label for="categoryName">Tên danh mục</label>
+            <input type="text" id="categoryName">
+            <span class="error" id="categoryNameError">Tên danh mục không được để trống</span>
+
+            <label>Trạng thái</label>
+            <div id="categoryStatus">
+                <input type="radio" name="categoryStatus" value="active" checked> Đang hoạt động
+                <input type="radio" name="categoryStatus" value="inactive"> Ngừng hoạt động
+            </div>
+
+            <button id="saveCategoryBtn">Thêm</button>
+        </div>
+    </div>
+
+    <script src="./homework5,6-ss35.js"></script>
+</body>
+</html>
