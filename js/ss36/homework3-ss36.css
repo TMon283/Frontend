@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    height: 200px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container h2 {
+    margin: 40px;
+}
+
+.btn {
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.red-btn {
+    background-color: rgb(241, 76, 76);
+    color: white;
+}
+
+.blue-btn {
+    background-color: rgb(60, 60, 235);
+    color: white;
+}
+
+.yellow-btn {
+    background-color: rgb(227, 227, 52);
+    color: black;
+}
+
+.violet-btn {
+    background-color: rgb(233, 61, 233);
+    color: white;
+}

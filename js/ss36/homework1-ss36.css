@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(223, 223, 227);
+    height: 900px;
+    width: 1500px;
+}
+
+.content-input {
+    width: 600px;
+    height: 150px;
+    background-color: white;
+    justify-self: center;
+    position: relative;
+    top: 200px;
+    display: block;
+    border-radius: 10px;
+}
+
+.content-input .text, .content-rename .text {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.input-line {
+    display: flex;
+    position: relative;
+    left: 150px;
+    gap: 10px;
+}
+
+.input-line input {
+    height: 34px;
+    width: 240px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.input-line button {
+    width: 60px;
+    height: 37px;
+    background-color: rgb(70, 70, 228);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.content-rename {
+    width: 600px;
+    height: 150px;
+    background-color: white;
+    justify-self: center;
+    position: relative;
+    top: 400px;
+    border-radius: 10px;
+    display: block;
+}
+
+.content-rename button {
+    width: 80px;
+    height: 37px;
+    background-color: rgb(70, 70, 228);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    left: 260px;
+}
